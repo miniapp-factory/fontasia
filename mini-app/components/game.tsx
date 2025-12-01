@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import Feedback from "@/components/feedback";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
@@ -72,6 +73,8 @@ export default function Game() {
   const [currentLevel, setCurrentLevel] = useState(1);
   const [input, setInput] = useState("");
   const [message, setMessage] = useState("");
+  const [feedbackMessage, setFeedbackMessage] = useState("");
+  const [showFeedback, setShowFeedback] = useState(false);
   const [showHint, setShowHint] = useState(false);
   const [randomIndex, setRandomIndex] = useState(0);
 
@@ -109,6 +112,9 @@ export default function Game() {
     const correct = currentRiddle.answer.some((ans) => ans.toLowerCase() === trimmed);
     if (correct) {
       setMessage("Correct!");
+      setFeedbackMessage("Correct!");
+      setShowFeedback(true);
+      setTimeout(() => setShowFeedback(false), 2000);
       if (mode === "level") {
         if (currentLevel < riddles.length) {
           setCurrentLevel(currentLevel + 1);
@@ -143,6 +149,7 @@ export default function Game() {
       {mode === "menu" && (
         <Card className="w-full max-w-md">
           <CardHeader>
+            <img src="/logo.png" alt="Fontasia logo" className="size-32 mb-4" />
             <CardTitle className="text-2xl">Fontasia</CardTitle>
           </CardHeader>
           <CardContent className="flex flex-col gap-4">
@@ -189,6 +196,7 @@ export default function Game() {
               </Button>
             </div>
             {message && <p className="mt-2">{message}</p>}
+            <Feedback message={feedbackMessage} visible={showFeedback} />
           </CardContent>
         </Card>
       )}
