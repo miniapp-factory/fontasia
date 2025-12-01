@@ -116,3 +116,109 @@
 
 # 2025-12-01 06:05:57.980180
 +apply changes
+
+# 2025-12-01 06:24:36.564415
++On the first click show a main menu with buttons of *Start Level: Starts at level 1 and
++*Random: Gives a random quiz to for users to answer
++*Exit: Exits the game
++
++For Random Button: Make a simple riddles for user to answer, make atleast 20 and randomize each click through the button
++
++For the gameplay just have a text box in the middle with the riddles entered
++
++It has buttons
++Hint: Gives the hint
++Enter: To enter the answer in the text box field
++Back: To go back to the main menu
++
++In the gameplay:
++Here is the leveling:
++First Level: Is introducing the gimmick with easy levels first.
++With a simple riddle:
++
++
++Riddle: Thin as a whisper, old as a tale,
++I hold inked secrets that time can pale.
++
++Answer is: Parchment
++Hint: You’d find me in an old library or ancient scroll — I’m not paper, but close.
++
++Second Level: I look like letters caught mid-vibration,
++a wavy echo from a retro station.
++
++Answer: Stereofidelic and Stereo
++Hint: Think of something that vibrates, like sound coming from two speakers at once.
++(Added: can you add a mercy rule on this that you can accept two answers)
++
++Third Level: I grace your bank, your card, your note,
++my clean lines make your money quote.
++
++Answer: KREDIT (can be lowercase)
++Hint: I deal with Kash in your wallets, deals with coins and card
++
++Fourth Level: 💌➡️👀📱
++😃💬❤️
++🐱🎉🌎
++
++Hint: I use pictures, not letters, to say what words cannot.
++Answer: Emoji
++
++
++Fifth level:🔩😀🥄🍄🅰💲🕴🅰
++
++Hint: I am what you previously saw, a name is what you clearly see. Look through the past and see me clearly
++Answer: Fontasia
++
+
+# 2025-12-01 06:24:36.567371
++On the first click show a main menu with buttons of *Start Level: Starts at level 1 and
++*Random: Gives a random quiz to for users to answer
++*Exit: Exits the game
++
++For Random Button: Make a simple riddles for user to answer, make atleast 20 and randomize each click through the button
++
++For the gameplay just have a text box in the middle with the riddles entered
++
++It has buttons
++Hint: Gives the hint
++Enter: To enter the answer in the text box field
++Back: To go back to the main menu
++
++In the gameplay:
++Here is the leveling:
++First Level: Is introducing the gimmick with easy levels first.
++With a simple riddle:
++
++
++Riddle: Thin as a whisper, old as a tale,
++I hold inked secrets that time can pale.
++
++Answer is: Parchment
++Hint: You’d find me in an old library or ancient scroll — I’m not paper, but close.
++
++Second Level: I look like letters caught mid-vibration,
++a wavy echo from a retro station.
++
++Answer: Stereofidelic and Stereo
++Hint: Think of something that vibrates, like sound coming from two speakers at once.
++(Added: can you add a mercy rule on this that you can accept two answers)
++
++Third Level: I grace your bank, your card, your note,
++my clean lines make your money quote.
++
++Answer: KREDIT (can be lowercase)
++Hint: I deal with Kash in your wallets, deals with coins and card
++
++Fourth Level: 💌➡️👀📱
++😃💬❤️
++🐱🎉🌎
++
++Hint: I use pictures, not letters, to say what words cannot.
++Answer: Emoji
++
++
++Fifth level:🔩😀🥄🍄🅰💲🕴🅰
++
++Hint: I am what you previously saw, a name is what you clearly see. Look through the past and see me clearly
++Answer: Fontasia
++
