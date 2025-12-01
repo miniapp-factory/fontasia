@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import Feedback from "@/components/feedback";
 
 const riddles = [
   {
@@ -153,6 +154,19 @@ export default function Game() {
             </Button>
             <Button variant="destructive" className="w-full" onClick={handleExit}>
               Exit
+            </Button>
+          </CardContent>
+        </Card>
+      )}
+      {mode === "won" && (
+        <Card className="w-full max-w-md">
+          <CardHeader>
+            <CardTitle className="text-2xl">Congratulations!</CardTitle>
+          </CardHeader>
+          <CardContent className="flex flex-col gap-4 items-center">
+            <p className="text-xl">You have completed all levels! 🎉</p>
+            <Button onClick={() => { setMode("menu"); }}>
+              Back to Menu
             </Button>
           </CardContent>
         </Card>
