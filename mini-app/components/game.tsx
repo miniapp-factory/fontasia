@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
-import Feedback from "@/components/feedback";
 
 const riddles = [
   {
@@ -74,7 +73,6 @@ export default function Game() {
   const [input, setInput] = useState("");
   const [message, setMessage] = useState("");
   const [feedbackMessage, setFeedbackMessage] = useState("");
-  const [showFeedback, setShowFeedback] = useState(false);
   const [gameWon, setGameWon] = useState(false);
   const [showHint, setShowHint] = useState(false);
   const [showFeedback, setShowFeedback] = useState(false);
@@ -147,7 +145,7 @@ export default function Game() {
     <div className="min-h-screen flex flex-col items-center justify-center bg-background p-4">
       {mode === "menu" && (
         <Card className="w-full max-w-md">
-          <CardHeader className="flex flex-col items-center">
+          <CardHeader className="flex flex-col items-center justify-center">
             <img src="/logo.png" alt="Fontasia logo" className="size-32 mb-4" />
             <CardTitle className="text-2xl">Fontasia</CardTitle>
           </CardHeader>
