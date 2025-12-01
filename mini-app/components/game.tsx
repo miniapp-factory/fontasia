@@ -4,7 +4,6 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { cn } from "@/lib/utils";
 
 const riddles = [
   {
@@ -72,10 +71,7 @@ export default function Game() {
   const [currentLevel, setCurrentLevel] = useState(1);
   const [input, setInput] = useState("");
   const [message, setMessage] = useState("");
-  const [feedbackMessage, setFeedbackMessage] = useState("");
-  const [gameWon, setGameWon] = useState(false);
   const [showHint, setShowHint] = useState(false);
-  const [showFeedback, setShowFeedback] = useState(false);
   const [randomIndex, setRandomIndex] = useState(0);
 
   const currentRiddle = mode === "random"
@@ -118,7 +114,6 @@ export default function Game() {
           setInput("");
           setShowHint(false);
         } else {
-          setGameWon(true);
           setMode("won");
         }
       } else {
@@ -191,19 +186,6 @@ export default function Game() {
               <Button variant="outline" onClick={handleBack} className="flex-1">
                 Back
               </Button>
-            {mode === "won" && (
-              <Card className="w-full max-w-md">
-                <CardHeader>
-                  <CardTitle className="text-2xl">Congratulations!</CardTitle>
-                </CardHeader>
-                <CardContent className="flex flex-col gap-4 items-center">
-                  <p className="text-xl">You have completed all levels! 🎉</p>
-                  <Button onClick={() => { setGameWon(false); setMode("menu"); }}>
-                    Back to Menu
-                  </Button>
-                </CardContent>
-              </Card>
-            )}
             </div>
             {message && <p className="mt-2">{message}</p>}
           </CardContent>
