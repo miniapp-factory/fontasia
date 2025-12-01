@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
+import Feedback from "@/components/feedback";
 
 const riddles = [
   {
@@ -110,17 +111,14 @@ export default function Game() {
     const correct = currentRiddle.answer.some((ans) => ans.toLowerCase() === trimmed);
     if (correct) {
       setMessage("Correct!");
-      setFeedbackMessage("Correct!");
-      setShowFeedback(true);
-      setTimeout(() => setShowFeedback(false), 2000);
       if (mode === "level") {
         if (currentLevel < riddles.length) {
           setCurrentLevel(currentLevel + 1);
           setInput("");
           setShowHint(false);
         } else {
-          setMessage("You completed all levels! 🎉");
-          setMode("menu");
+          setGameWon(true);
+          setMode("won");
         }
       } else {
         setMessage("Correct! Back to menu.");
@@ -192,9 +190,21 @@ export default function Game() {
               <Button variant="outline" onClick={handleBack} className="flex-1">
                 Back
               </Button>
+            {mode === "won" && (
+              <Card className="w-full max-w-md">
+                <CardHeader>
+                  <CardTitle className="text-2xl">Congratulations!</CardTitle>
+                </CardHeader>
+                <CardContent className="flex flex-col gap-4 items-center">
+                  <p className="text-xl">You have completed all levels! 🎉</p>
+                  <Button onClick={() => { setGameWon(false); setMode("menu"); }}>
+                    Back to Menu
+                  </Button>
+                </CardContent>
+              </Card>
+            )}
             </div>
             {message && <p className="mt-2">{message}</p>}
-            <Feedback message={feedbackMessage} visible={showFeedback} />
           </CardContent>
         </Card>
       )}
