@@ -73,8 +73,11 @@ export default function Game() {
   const [currentLevel, setCurrentLevel] = useState(1);
   const [input, setInput] = useState("");
   const [message, setMessage] = useState("");
+  const [feedbackMessage, setFeedbackMessage] = useState("");
+  const [showFeedback, setShowFeedback] = useState(false);
   const [gameWon, setGameWon] = useState(false);
   const [showHint, setShowHint] = useState(false);
+  const [showFeedback, setShowFeedback] = useState(false);
   const [randomIndex, setRandomIndex] = useState(0);
 
   const currentRiddle = mode === "random"
