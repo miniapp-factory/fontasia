@@ -1,0 +1,118 @@
+
+# 2025-12-01 06:04:59.681751
++Code the following app
++```
++Overview:
++
++A word puzzle game that uses a variety of fonts to display such riddles that is hard to decipher and read, but there is a clue in each of the riddles there is gonna be 5 levels each with increasing difficulty.
++
++
++Setting:
++There is a text box in the middle and a text field to enter the answer and they can only proceed if the answer is correct. Add a hint button on to help the player
++Add a randomizer in the main menu to test players for random riddles with random font styles for each. 
++
++Title of the Game: Fontasia
++
++First Level: Is introducing the gimmick with easy levels first.
++With a simple riddle:
++
++Font style for these is: Parchment
++Riddle: Thin as a whisper, old as a tale,
++I hold inked secrets that time can pale.
++
++Answer is: Parchment
++Hint: You’d find me in an old library or ancient scroll — I’m not paper, but close.
++
++Font style for these is: Stereofidelic
++Second Level: I look like letters caught mid-vibration,
++a wavy echo from a retro station.
++
++Answer: Stereofidelic and Stereo
++Hint: Think of something that vibrates, like sound coming from two speakers at once.
++(Added: can you add a mercy rule on this that you can accept two answers)
++
++Font style for these is: KREDIT
++Third Level: I grace your bank, your card, your note,
++my clean lines make your money quote.
++
++Answer: KREDIT (can be lowercase)
++Hint: I deal with Kash in your wallets, deals with coins and card
++
++Fourth Level: 💌➡️👀📱
++😃💬❤️
++🐱🎉🌎
++
++Hint: I use pictures, not letters, to say what words cannot.
++Answer: Emoji
++
++
++Fifth level:🔩😀🥄🍄🅰💲🕴🅰
++
++Hint: I am what you previously saw, a name is what you clearly see. Look through the past and see me clearly
++Answer: Fontasia
++
++```
++
++Generate an app logo and update the app metadata title and description.
+
+# 2025-12-01 06:04:59.683045
++Code the following app
++```
++Overview:
++
++A word puzzle game that uses a variety of fonts to display such riddles that is hard to decipher and read, but there is a clue in each of the riddles there is gonna be 5 levels each with increasing difficulty.
++
++
++Setting:
++There is a text box in the middle and a text field to enter the answer and they can only proceed if the answer is correct. Add a hint button on to help the player
++Add a randomizer in the main menu to test players for random riddles with random font styles for each. 
++
++Title of the Game: Fontasia
++
++First Level: Is introducing the gimmick with easy levels first.
++With a simple riddle:
++
++Font style for these is: Parchment
++Riddle: Thin as a whisper, old as a tale,
++I hold inked secrets that time can pale.
++
++Answer is: Parchment
++Hint: You’d find me in an old library or ancient scroll — I’m not paper, but close.
++
++Font style for these is: Stereofidelic
++Second Level: I look like letters caught mid-vibration,
++a wavy echo from a retro station.
++
++Answer: Stereofidelic and Stereo
++Hint: Think of something that vibrates, like sound coming from two speakers at once.
++(Added: can you add a mercy rule on this that you can accept two answers)
++
++Font style for these is: KREDIT
++Third Level: I grace your bank, your card, your note,
++my clean lines make your money quote.
++
++Answer: KREDIT (can be lowercase)
++Hint: I deal with Kash in your wallets, deals with coins and card
++
++Fourth Level: 💌➡️👀📱
++😃💬❤️
++🐱🎉🌎
++
++Hint: I use pictures, not letters, to say what words cannot.
++Answer: Emoji
++
++
++Fifth level:🔩😀🥄🍄🅰💲🕴🅰
++
++Hint: I am what you previously saw, a name is what you clearly see. Look through the past and see me clearly
++Answer: Fontasia
++
++```
++
++Generate an app logo and update the app metadata title and description.
+
+# 2025-12-01 06:05:57.979587
++apply changes
+
+# 2025-12-01 06:05:57.980180
++apply changes
