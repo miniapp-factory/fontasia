@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import Feedback from "@/components/feedback";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
@@ -69,12 +68,11 @@ const randomRiddles = [
 ];
 
 export default function Game() {
-  const [mode, setMode] = useState<"menu" | "level" | "random">("menu");
+  const [mode, setMode] = useState<"menu" | "level" | "random" | "won">("menu");
   const [currentLevel, setCurrentLevel] = useState(1);
   const [input, setInput] = useState("");
   const [message, setMessage] = useState("");
-  const [feedbackMessage, setFeedbackMessage] = useState("");
-  const [showFeedback, setShowFeedback] = useState(false);
+  const [gameWon, setGameWon] = useState(false);
   const [showHint, setShowHint] = useState(false);
   const [randomIndex, setRandomIndex] = useState(0);
 
@@ -148,7 +146,7 @@ export default function Game() {
     <div className="min-h-screen flex flex-col items-center justify-center bg-background p-4">
       {mode === "menu" && (
         <Card className="w-full max-w-md">
-          <CardHeader>
+          <CardHeader className="flex flex-col items-center">
             <img src="/logo.png" alt="Fontasia logo" className="size-32 mb-4" />
             <CardTitle className="text-2xl">Fontasia</CardTitle>
           </CardHeader>
